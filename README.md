@@ -1,5 +1,6 @@
 <summary><strong>🇧🇷 Versão em Português</strong></summary>
-# Classificação de Fraturas Ósseas com Transfer Learning
+
+## Classificação de Fraturas Ósseas com Transfer Learning
 
 Este projeto foi desenvolvido com o objetivo de classificar radiografias entre dois tipos de fraturas: **fratura simples** e **fratura cominutiva**, utilizando redes neurais convolucionais e técnicas de **Transfer Learning**.
 
@@ -78,7 +79,7 @@ Nosso objetivo principal foi:
 
 <summary><strong>🇺🇸 English Version</strong></summary>
 
-# Bone Fracture Classification using Transfer Learning
+## Bone Fracture Classification using Transfer Learning
 
 This project focuses on the classification of X-ray images into two types of bone fractures: **simple fractures** and **comminuted fractures**, using convolutional neural networks and **transfer learning techniques**.
 
