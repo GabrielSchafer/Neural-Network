@@ -73,3 +73,78 @@ Nosso objetivo principal foi:
 - Isabela Cunha
 - Gabriel Heyde
 
+# Bone Fracture Classification using Transfer Learning
+
+This project focuses on the classification of X-ray images into two types of bone fractures: **simple fractures** and **comminuted fractures**, using convolutional neural networks and **transfer learning techniques**.
+
+## 🩻 Dataset
+
+We used the **[Simple vs Comminuted Fractures X-ray Data](https://www.kaggle.com/datasets/your-link-here)** published on Kaggle in **December 2024**. The dataset contains labeled X-ray images divided into two categories and includes augmented images to improve model learning.
+
+### 📊 Dataset Summary
+
+**Simple Fracture:**
+- Original Images: 1,211  
+- Augmented Images: 6,311  
+- **Total**: 7,522  
+
+**Comminuted Fracture:**
+- Original Images: 1,173  
+- Augmented Images: 7,366  
+- **Total**: 8,539  
+
+**Overall Total:** 16,061 JPG images.
+
+The dataset includes augmented images (already pre-processed), which help enhance the model’s ability to generalize by increasing visual diversity.
+
+---
+
+## 🧠 Neural Network Approach
+
+We applied **transfer learning** to fine-tune pre-trained models on our fracture classification task.
+
+### Transfer Learning Strategies
+
+1. **Layer Freezing**  
+   We initially froze the convolutional base and trained only the new classifier layers (Dense layers), allowing the model to adapt without overwriting previously learned features.
+
+2. **Fine-Tuning**  
+   After initial training, we unfroze the top layers of the convolutional base and retrained the model with a very low learning rate, allowing it to better adjust to the specific features of fracture X-rays.
+
+### Pre-trained Model Used
+
+- ✅ **EfficientNetB2** (pre-trained on ImageNet)
+
+Other models were considered, but EfficientNetB2 provided a good balance between performance and computational cost.
+
+---
+
+## ⚙️ Technologies Used
+
+- **Python**  
+- **Keras / TensorFlow**  
+- **Google Colab** (for training environment)  
+- **NumPy, Pandas, Matplotlib, Seaborn** (for data analysis and visualization)
+
+---
+
+## 📈 Project Goals
+
+The main goals of the project were:
+
+- To build a robust neural network model capable of classifying bone fractures accurately.
+- To evaluate the performance impact of different transfer learning strategies.
+- To identify and analyze key visual features distinguishing the fracture types.
+
+> *For detailed results and evaluation metrics, please check the notebooks in the repository.*
+
+---
+## 👥 Team
+
+- Gabriel Assmann  
+- Isabela Cunha
+- Gabriel Heyde
+
+
+
+
