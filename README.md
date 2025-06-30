@@ -73,6 +73,9 @@ Nosso objetivo principal foi:
 - Isabela Cunha
 - Gabriel Heyde
 
+
+<!-- English version-->
+
 # Bone Fracture Classification using Transfer Learning
 
 This project focuses on the classification of X-ray images into two types of bone fractures: **simple fractures** and **comminuted fractures**, using convolutional neural networks and **transfer learning techniques**.
